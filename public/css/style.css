@@ -111,3 +111,23 @@ footer .i{vertical-align:-4px;color:#E5484D}
 .prose p{color:var(--mute);margin-bottom:12px}
 .prose strong{color:var(--ink)}
 @media (max-width:860px){.steps{grid-template-columns:1fr}}
+
+:root{color-scheme:light}
+[data-theme=dark]{color-scheme:dark}
+
+html,.res{
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--mute) 45%,transparent) transparent;
+}
+
+@supports not (scrollbar-color:auto){
+  ::-webkit-scrollbar{width:8px;height:8px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--mute) 45%,transparent);
+    border-radius:99px;
+    border:2px solid transparent;
+    background-clip:content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover{background:var(--brand);background-clip:content-box}
+}

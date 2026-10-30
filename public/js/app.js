@@ -13,7 +13,7 @@
     '<nav id="nav" aria-label="Principal">' + links.map(function (l) { return '<a href="' + l[0] + '"' + (l[2] && l[2] === page ? ' aria-current="page"' : '') + '>' + l[1] + '</a>'; }).join('') + '</nav>' +
     '<button class="ib" id="th" aria-label="Alternar tema">' + I('moon') + I('sun') + '</button>' +
     '<button class="ib" id="bg" aria-label="Abrir menu">' + I('menu') + '</button></div>';
-  $('#ft').innerHTML = '<div class="wrap"><p>&copy; 2026 UECEmails. Feito com ' + I('heart', 18) + ' por Nicolas Levi.</p><p>Agradecimentos a Deisee pela iniciativa.</p></div>';
+  $('#ft').innerHTML = '<div class="wrap"><p>&copy; 2026 UECEmails. Feito com ' + I('heart', 18) + ' por Nicolas (Shazanxz).</p><p>Agradecimentos a Deisee pela iniciativa.</p></div>';
   $('#th').onclick = function () { setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'); };
   $('#bg').onclick = function () { $('#hd').classList.toggle('open'); };
   $('#nav').onclick = function () { $('#hd').classList.remove('open'); };
