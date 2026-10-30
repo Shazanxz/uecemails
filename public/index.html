@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1B5E20">
+<link rel="stylesheet" href="css/style.css">
+<title>UECEmails – e-mails institucionais da UECE</title>
+<meta name="description" content="Encontre e escreva para professores, coordenações e setores da UECE.">
+</head>
+<body data-page="home">
+<header id="hd"></header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <h1>Todo e-mail da UECE, a um clique.</h1>
+      <p class="sub">Professores, coordenações e setores num só lugar. Busque pelo nome e escreva pelo Gmail, Outlook ou app do seu aparelho.</p>
+      <div class="sf">
+        <svg class="i" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="hs" type="search" placeholder="Nome, setor ou e-mail" autocomplete="off" aria-label="Buscar e-mail">
+        <ul class="res" id="hr" hidden></ul>
+      </div>
+      <div class="cta"><a class="btn pri" href="professores">Ver professores</a><a class="btn" href="#setores">Ver setores</a></div>
+    </div>
+    <svg class="stamp" viewBox="0 0 320 320" role="img" aria-label="Selo postal da UECE">
+      <defs><path id="ring" d="M160 160m-122 0a122 122 0 1 1 244 0a122 122 0 1 1-244 0"/></defs>
+      <circle cx="160" cy="160" r="150" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <g class="ring"><text><textPath href="#ring" textLength="758">UNIVERSIDADE ESTADUAL DO CEARÁ • FORTALEZA • </textPath></text></g>
+      <g transform="rotate(-6 160 160)"><rect x="90" y="112" width="140" height="96" rx="16" fill="var(--sun)"/><path d="m98 128 62 44 62-44" fill="none" stroke="#0B1F24" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <circle cx="160" cy="160" r="96" fill="none" stroke="currentColor" stroke-width="2" opacity=".35"/>
+    </svg>
+  </div>
+
+  <section class="blk" id="setores"><div class="wrap">
+    <div class="head"><h2>Setores e coordenações</h2><p>Endereços conferidos em páginas oficiais da UECE.</p></div>
+    <div class="tools"><div class="sf"><svg class="i" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="qs" type="search" placeholder="Buscar setor" autocomplete="off" aria-label="Buscar setor"></div><div class="chips" id="chs"></div></div>
+    <p class="cnt" id="cs" aria-live="polite"></p>
+    <ul class="list" id="ls"></ul>
+  </div></section>
+
+</main>
+<footer id="ft"></footer>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

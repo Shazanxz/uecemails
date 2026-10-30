@@ -1,0 +1,8 @@
+{
+  "name": "uecemails",
+  "version": "2.0.0",
+  "description": "Diretório de e-mails institucionais da UECE",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}
